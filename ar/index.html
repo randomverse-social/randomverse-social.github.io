@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Randomverse — اجتماعي، بلا توقعات.</title>
+
+  <meta name="description"
+    content="Randomverse منصة اجتماعية تركز على اكتشاف المحتوى بشكل عفوي، حيث يستحق كل منشور فرصة ليتم اكتشافه حول العالم.">
+
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A0B12">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="canonical" href="https://randomverse-social.github.io/ar/">
+
+  <link rel="alternate" hreflang="en" href="https://randomverse-social.github.io/">
+  <link rel="alternate" hreflang="ar" href="https://randomverse-social.github.io/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://randomverse-social.github.io/">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/logo/logo.jpeg">
+
+  <meta property="og:title" content="Randomverse — اجتماعي، بلا توقعات.">
+  <meta property="og:description"
+    content="منصة اجتماعية تركز على اكتشاف المحتوى بشكل عفوي. كل منشور يستحق فرصة ليتم اكتشافه حول العالم.">
+  <meta property="og:url" content="https://randomverse-social.github.io/ar/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Randomverse">
+  <meta property="og:image" content="https://ggkghtuxlwnkmwrwtows.supabase.co/storage/v1/object/public/logo/logo.jpeg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Randomverse — اجتماعي، بلا توقعات.">
+  <meta name="twitter:description"
+    content="منصة اجتماعية تركز على اكتشاف المحتوى بشكل عفوي. كل منشور يستحق فرصة ليتم اكتشافه حول العالم.">
+  <meta name="twitter:image" content="https://ggkghtuxlwnkmwrwtows.supabase.co/storage/v1/object/public/logo/logo.jpeg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Randomverse",
+    "url": "https://randomverse-social.github.io/ar/",
+    "logo": "https://ggkghtuxlwnkmwrwtows.supabase.co/storage/v1/object/public/logo/logo.jpeg",
+    "description": "منصة اجتماعية تركز على اكتشاف المحتوى بشكل عفوي.",
+    "sameAs": [
+      "https://linkedin.com/company/randomverse",
+      "https://github.com/randomverse-social",
+      "https://x.com/randomverse_soc",
+      "https://www.instagram.com/randomverse_social/",
+      "https://mastodon.social/@Randomverse"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Randomverse",
+    "url": "https://randomverse-social.vercel.app/",
+    "description": "منصة اجتماعية تركز على اكتشاف المحتوى بشكل عفوي.",
+    "applicationCategory": "SocialNetworkingApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/sticky-navbar.css">
+  <link rel="stylesheet" href="../css/hero.css">
+  <link rel="stylesheet" href="../css/dice.css">
+  <link rel="stylesheet" href="../css/what-is-randomverse.css">
+  <link rel="stylesheet" href="../css/why-randomverse.css">
+  <link rel="stylesheet" href="../css/for-users.css">
+  <link rel="stylesheet" href="../css/for-creators.css">
+  <link rel="stylesheet" href="../css/philosophy.css">
+  <link rel="stylesheet" href="../css/privacy.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/final-cta.css">
+</head>
+
+<body>
+
+  <nav class="site-nav" aria-label="التنقل الرئيسي">
+    <div class="container site-nav__inner">
+
+      <a class="site-nav__brand" href="./" aria-label="الصفحة الرئيسية لـ Randomverse">
+        <img src="../assets/logo/logo.jpeg" alt="Randomverse">
+      </a>
+
+      <div class="site-nav__links">
+
+        <a href="#what-is-randomverse">ما هو Randomverse؟</a>
+        <a href="#why-randomverse">لماذا Randomverse؟</a>
+        <a href="#for-users">للمستخدمين</a>
+        <a href="#for-creators">لصنّاع المحتوى</a>
+        <a href="#privacy">الخصوصية</a>
+        <a class="site-nav__language" href="../">
+          English
+        </a>
+
+      </div>
+
+      <button class="site-nav__toggle" type="button" aria-label="فتح القائمة" aria-expanded="false"
+        aria-controls="site-nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="site-nav__mobile" id="site-nav-menu">
+
+        <a href="#what-is-randomverse">ما هو Randomverse؟</a>
+        <a href="#why-randomverse">لماذا Randomverse؟</a>
+        <a href="#for-users">للمستخدمين</a>
+        <a href="#for-creators">لصنّاع المحتوى</a>
+        <a href="#privacy">الخصوصية</a>
+        <a class="site-nav__language" href="../">
+          English
+        </a>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+
+    <section class="hero" aria-labelledby="hero-title">
+
+      <div class="hero__glow hero__glow--purple"></div>
+      <div class="hero__glow hero__glow--cyan"></div>
+      <div class="hero__glow hero__glow--pink"></div>
+
+      <div class="hero__particles" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="container hero__container">
+
+        <div class="hero__content">
+
+          <h1 id="hero-title" class="hero__title reveal">
+            اجتماعي،
+            <br>
+            بلا
+            <span>توقعات.</span>
+          </h1>
+
+          <p class="hero__description reveal">
+            كل منشور يستحق فرصة ليتم اكتشافه حول العالم.
+          </p>
+
+          <div class="hero__actions reveal">
+
+            <a class="button button--primary" href="https://randomverse-social.vercel.app/" target="_blank"
+              rel="noopener noreferrer">
+              جرّب Randomverse
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a class="button button--secondary" href="#what-is-randomverse">
+              اكتشف المزيد
+              <span aria-hidden="true">↓</span>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="hero__dice" aria-hidden="true">
+
+          <div class="dice-orbit dice-orbit--outer"></div>
+          <div class="dice-orbit dice-orbit--inner"></div>
+
+          <div class="dice">
+            <div class="dice__face dice__face--front">
+              <span></span>
+            </div>
+
+            <div class="dice__face dice__face--back">
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="dice__face dice__face--right">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="dice__face dice__face--left">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="dice__face dice__face--top">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="dice__face dice__face--bottom">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="dice__shadow"></div>
+
+        </div>
+
+        <a class="hero__scroll" href="#what-is-randomverse" aria-label="انتقل لاكتشاف Randomverse">
+          <span>استكشف</span>
+          <span class="hero__scroll-line"></span>
+        </a>
+
+    </section>
+
+
+    <!-- WHAT IS RANDOMVERSE -->
+
+    <section id="what-is-randomverse" class="section what-is">
+
+      <div class="container">
+
+        <div class="what-is__intro reveal">
+
+          <p class="eyebrow">ما هو Randomverse؟</p>
+
+          <h2 class="section-title">
+            تجربة اجتماعية
+            مبنية حول
+            <span class="gradient-text">الاكتشاف.</span>
+          </h2>
+
+          <p class="section-description">
+            Randomverse تجربة اجتماعية تركز على الاكتشاف، مبنية حول فكرة
+            بسيطة: كل منشور يستحق فرصة ليتم اكتشافه.
+          </p>
+
+        </div>
+
+        <div class="what-is__visual">
+
+          <div class="what-is__card what-is__card--main reveal">
+
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div>
+
+              <p class="what-is__card-label">الفكرة</p>
+
+              <h3>
+                افتح.
+                مرّر.
+                <span>اكتشف.</span>
+              </h3>
+
+              <p>
+                لا ضغط لبناء قاعدة من المتابعين. ولا حاجة للتنافس على
+                الانتباه. مجرد نافذة متجددة باستمرار على لحظات وأفكار
+                وصور ومقاطع فيديو من أشخاص حول العالم.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="what-is__principles">
+
+            <article class="principle-card reveal">
+
+              <div class="principle-card__content">
+                <p class="principle-card__number">01</p>
+                <h3>الفضول أولاً</h3>
+                <p>اكتشف شيئاً لم تكن تبحث عنه.</p>
+              </div>
+
+            </article>
+
+            <article class="principle-card reveal">
+
+              <div class="principle-card__content">
+                <p class="principle-card__number">02</p>
+                <h3>اكتشاف عالمي</h3>
+                <p>استكشف لحظات من أشخاص حول العالم.</p>
+              </div>
+
+            </article>
+
+            <article class="principle-card reveal">
+
+              <div class="principle-card__content">
+                <p class="principle-card__number">03</p>
+                <h3>ضغط أقل</h3>
+                <p>أنشئ وشارك دون السعي وراء الانتباه.</p>
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PHILOSOPHY -->
+
+    <section id="philosophy" class="section philosophy">
+
+      <div class="philosophy__glow philosophy__glow--one"></div>
+      <div class="philosophy__glow philosophy__glow--two"></div>
+
+      <div class="container">
+
+        <div class="philosophy__content reveal">
+
+          <p class="eyebrow">الفلسفة</p>
+
+          <h2>
+            اجتماعي،
+            <span>بلا</span>
+            توقعات.
+          </h2>
+
+          <p class="philosophy__description">
+            لست بحاجة إلى الانتشار الواسع. ولست بحاجة إلى بناء قاعدة من
+            المتابعين. ولست بحاجة إلى أن تجعل كل ما تشاركه مرتبطاً بما يحقق
+            أفضل أداء.
+          </p>
+
+          <p class="philosophy__description">
+            افتح Randomverse. مرّر. اكتشف شيئاً لم تتوقعه.
+          </p>
+
+        </div>
+
+        <div class="philosophy__statement reveal">
+
+          <div class="philosophy__line"></div>
+
+          <p>
+            مساحة يكون فيها الفضول أهم من الشعبية.
+          </p>
+
+          <div class="philosophy__line"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHY RANDOMVERSE -->
+
+    <section id="why-randomverse" class="section why-randomverse">
+
+      <div class="why-randomverse__glow why-randomverse__glow--one"></div>
+      <div class="why-randomverse__glow why-randomverse__glow--two"></div>
+
+      <div class="container">
+
+        <div class="why-randomverse__intro reveal">
+
+          <p class="eyebrow">لماذا Randomverse؟</p>
+
+          <h2 class="section-title">
+            لأنك أحياناً تريد
+            <span class="gradient-text">أن ترى شيئاً مختلفاً.</span>
+          </h2>
+
+          <p class="section-description">
+            يمنحك Randomverse مساحة للخروج من المألوف واكتشاف شيء لم تكن
+            تبحث عنه.
+          </p>
+
+        </div>
+
+        <div class="why-randomverse__reasons">
+
+          <article class="why-reason reveal">
+
+            <div class="why-reason__number">01</div>
+
+            <div class="why-reason__content">
+              <h3>اكسر الروتين</h3>
+              <p>
+                ليس كل ما تراه على الإنترنت بحاجة إلى أن يكون مصمماً وفقاً
+                لما تعرف مسبقاً أنك تفضله.
+              </p>
+            </div>
+
+            <div class="why-reason__mark" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </div>
+
+          </article>
+
+          <article class="why-reason reveal">
+
+            <div class="why-reason__number">02</div>
+
+            <div class="why-reason__content">
+              <h3>وسّع عالمك</h3>
+              <p>
+                صادف أشخاصاً ووجهات نظر ولحظات ربما لم تكن لتلتقي بها
+                بطريقة أخرى.
+              </p>
+            </div>
+
+            <div class="why-reason__mark" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </div>
+
+          </article>
+
+          <article class="why-reason reveal">
+
+            <div class="why-reason__number">03</div>
+
+            <div class="why-reason__content">
+              <h3>احتضن غير المتوقع</h3>
+              <p>
+                لست بحاجة إلى معرفة ما سيأتي بعد ذلك. وهذا جزء من التجربة.
+              </p>
+            </div>
+
+            <div class="why-reason__mark" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOR USERS -->
+
+    <section id="for-users" class="section for-users">
+
+      <div class="for-users__glow for-users__glow--one"></div>
+      <div class="for-users__glow for-users__glow--two"></div>
+
+      <div class="container">
+
+        <div class="for-users__intro reveal">
+
+          <p class="eyebrow">للمستخدمين</p>
+
+          <h2 class="section-title">
+            هناك المزيد لاكتشافه
+            <span class="gradient-text">أبعد مما هو مألوف.</span>
+          </h2>
+
+          <p class="section-description">
+            استكشف Randomverse بالوتيرة التي تناسبك، واحفظ ما يلفت انتباهك،
+            وشكّل مساحتك الخاصة دون تعقيدات غير ضرورية.
+          </p>
+
+        </div>
+
+        <div class="for-users__layout">
+
+          <article class="for-users__feature reveal">
+
+            <div class="for-users__feature-orbit" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="for-users__feature-content">
+
+              <span class="for-users__feature-number">01</span>
+
+              <h3>استكشف بحرية</h3>
+
+              <p>
+                تصفّح Randomverse دون إنشاء حساب. ابدأ مباشرة، واكتشف
+                شيئاً غير متوقع، وواصل الاستكشاف.
+              </p>
+
+            </div>
+
+          </article>
+
+          <div class="for-users__items">
+
+            <article class="user-feature reveal">
+
+              <div class="user-feature__icon" aria-hidden="true">
+                <span>♡</span>
+              </div>
+
+              <div>
+                <span class="user-feature__number">02</span>
+
+                <h3>احفظ ما تجده</h3>
+
+                <p>
+                  احتفظ بالمنشورات التي تلفت انتباهك في المفضلة وعد إليها
+                  لاحقاً.
+                </p>
+              </div>
+
+            </article>
+
+            <article class="user-feature reveal">
+
+              <div class="user-feature__icon" aria-hidden="true">
+                <span>◌</span>
+              </div>
+
+              <div>
+                <span class="user-feature__number">03</span>
+
+                <h3>أنشئ مساحتك</h3>
+
+                <p>
+                  أنشئ ملفاً شخصياً واجعل لك ركناً خاصاً بك في Randomverse.
+                </p>
+              </div>
+
+            </article>
+
+            <article class="user-feature reveal">
+
+              <div class="user-feature__icon" aria-hidden="true">
+                <span>✓</span>
+              </div>
+
+              <div>
+                <span class="user-feature__number">04</span>
+
+                <h3>ابقَ متحكماً</h3>
+
+                <p>
+                  أبلغ عن المحتوى غير المناسب وساهم في إبقاء الاكتشاف
+                  ممتعاً للجميع.
+                </p>
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOR CREATORS -->
+
+    <section id="for-creators" class="section for-creators">
+
+      <div class="for-creators__glow for-creators__glow--one"></div>
+      <div class="for-creators__glow for-creators__glow--two"></div>
+
+      <div class="container">
+
+        <div class="for-creators__intro reveal">
+
+          <p class="eyebrow">لصنّاع المحتوى</p>
+
+          <h2 class="section-title">
+            أنشئ وشارك، ودع
+            <span class="gradient-text">محتواك يجد طريقه.</span>
+          </h2>
+
+          <p class="section-description">
+            شارك ما يهمك دون أن تجعل كل شيء يدور حول المتابعين أو الشعبية
+            أو الأداء.
+          </p>
+
+        </div>
+
+        <div class="for-creators__layout">
+
+          <article class="for-creators__feature reveal">
+
+            <div class="for-creators__feature-orbit" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="for-creators__feature-content">
+
+              <span class="for-creators__feature-number">01</span>
+
+              <h3>دع الآخرين يكتشفونك</h3>
+
+              <p>
+                تصبح منشوراتك جزءاً من تجربة الاكتشاف العالمية في
+                Randomverse، مما يمنح أشخاصاً حول العالم فرصة لمصادفة ما
+                تشاركه.
+              </p>
+
+            </div>
+
+          </article>
+
+          <div class="for-creators__items">
+
+            <article class="creator-feature reveal">
+
+              <div class="creator-feature__icon" aria-hidden="true">
+                <span>＋</span>
+              </div>
+
+              <div>
+
+                <span class="creator-feature__number">02</span>
+
+                <h3>أنشئ وشارك</h3>
+
+                <p>
+                  شارك الصور أو مقاطع الفيديو أو النصوص دون ضغط لتحقيق
+                  أداء معين أو التنافس أو الالتزام بقالب محدد.
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="creator-feature reveal">
+
+              <div class="creator-feature__icon" aria-hidden="true">
+                <span>↗</span>
+              </div>
+
+              <div>
+
+                <span class="creator-feature__number">03</span>
+
+                <h3>رؤى التفاعل</h3>
+
+                <p>
+                  تعرّف على كيفية اكتشاف الأشخاص لما تشاركه وكيفية
+                  تفاعلهم معه.
+                </p>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRIVACY -->
+
+    <section id="privacy" class="section privacy">
+
+      <div class="privacy__glow privacy__glow--one"></div>
+      <div class="privacy__glow privacy__glow--two"></div>
+
+      <div class="container">
+
+        <div class="privacy__layout">
+
+          <div class="privacy__content reveal">
+
+            <p class="eyebrow">الخصوصية</p>
+
+            <h2 class="section-title">
+              استكشف بحرية.
+              <span class="gradient-text">بياناتك لها غرض.</span>
+            </h2>
+
+            <p class="section-description">
+              صُمم Randomverse مع وضع الخصوصية في الاعتبار. يمكنك استكشاف
+              المنصة دون إنشاء حساب، بينما تُستخدم المعلومات التي نجمعها
+              لتشغيل التجربة وفهمها وتحسينها.
+            </p>
+
+            <div class="privacy__principles">
+
+              <div class="privacy__principle">
+
+                <span class="privacy__number">01</span>
+
+                <div>
+                  <h3>تصفّح دون حساب</h3>
+
+                  <p>
+                    استكشف Randomverse دون التسجيل أو إنشاء ملف شخصي.
+                    لا تحتاج إلى حساب إلا لميزات مثل النشر والمفضلة
+                    وتخصيص الملف الشخصي.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="privacy__principle">
+
+                <span class="privacy__number">02</span>
+
+                <div>
+                  <h3>استخدام هادف للبيانات</h3>
+
+                  <p>
+                    نجمع ونستخدم المعلومات التي تساعدنا على تشغيل
+                    Randomverse وفهم كيفية استخدام المنصة، بما في ذلك
+                    معرفة الأماكن التي يكتشف منها مجتمعنا المنصة.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="privacy__principle">
+
+                <span class="privacy__number">03</span>
+
+                <div>
+                  <h3>الاكتشاف يبقى محور التجربة</h3>
+
+                  <p>
+                    تجربتك لا تُبنى حول ملفك الشخصي أو شعبيتك أو موقعك.
+                    صُمم Randomverse ليبقى التركيز على اكتشاف ما لم تكن
+                    تتوقعه.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="privacy__visual reveal" aria-hidden="true">
+
+            <div class="privacy__halo privacy__halo--outer"></div>
+            <div class="privacy__halo privacy__halo--middle"></div>
+            <div class="privacy__halo privacy__halo--inner"></div>
+
+            <div class="privacy__core">
+
+              <div class="privacy__lock">
+                <span></span>
+              </div>
+
+            </div>
+
+            <span class="privacy__dot privacy__dot--one"></span>
+            <span class="privacy__dot privacy__dot--two"></span>
+            <span class="privacy__dot privacy__dot--three"></span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL CTA -->
+
+    <section id="try-randomverse" class="section final-cta">
+
+      <div class="final-cta__glow final-cta__glow--one"></div>
+      <div class="final-cta__glow final-cta__glow--two"></div>
+
+      <div class="container">
+
+        <div class="final-cta__content reveal">
+
+          <p class="eyebrow">مستعد للاكتشاف؟</p>
+
+          <h2>
+            لا تعرف أبداً
+            <span>ما الذي ستجده بعد ذلك.</span>
+          </h2>
+
+          <p class="final-cta__description">
+            افتح Randomverse ودع الفضول يقودك.
+          </p>
+
+          <a class="button button--primary final-cta__button" href="https://randomverse-social.vercel.app/"
+            target="_blank" rel="noopener noreferrer">
+            جرّب Randomverse
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <p class="final-cta__tagline">
+            اجتماعي، بلا توقعات.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="site-footer__main">
+
+        <div class="site-footer__brand">
+
+          <a href="./" aria-label="الصفحة الرئيسية لـ Randomverse">
+            <img src="../assets/logo/logo.jpeg" alt="Randomverse">
+          </a>
+
+          <p>
+            اجتماعي، بلا توقعات.
+          </p>
+
+        </div>
+
+        <div class="site-footer__links">
+
+          <div class="site-footer__group">
+
+            <span>استكشف</span>
+
+            <a href="#what-is-randomverse">
+              ما هو Randomverse؟
+            </a>
+
+            <a href="#why-randomverse">
+              لماذا Randomverse؟
+            </a>
+
+            <a href="#for-users">
+              للمستخدمين
+            </a>
+
+            <a href="#for-creators">
+              لصنّاع المحتوى
+            </a>
+
+            <a href="#privacy">
+              الخصوصية
+            </a>
+            <a class="site-nav__language" href="../">
+              English
+            </a>
+
+          </div>
+
+          <div class="site-footer__group">
+
+            <span>تواصل</span>
+
+            <a href="https://linkedin.com/company/randomverse" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+
+            <a href="https://github.com/randomverse-social" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+
+            <a href="https://x.com/randomverse_soc" target="_blank" rel="noopener noreferrer">
+              X
+            </a>
+
+            <a href="https://www.instagram.com/randomverse_social/" target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>
+
+            <a href="https://mastodon.social/@Randomverse" target="_blank" rel="me noopener noreferrer">
+              Mastodon
+            </a>
+
+            <a href="mailto:randomverse.social.official@gmail.com">
+              البريد الإلكتروني
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="site-footer__bottom">
+
+        <p>بُني بدافع الفضول.</p>
+
+        <p>© 2026 Randomverse</p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

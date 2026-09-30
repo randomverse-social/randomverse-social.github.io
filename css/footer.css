@@ -1,0 +1,246 @@
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+  position: relative;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  background:
+    linear-gradient(180deg,
+      rgba(10, 11, 18, 0.25),
+      rgba(10, 11, 18, 0.9));
+}
+
+.site-footer__main {
+  display: grid;
+
+  grid-template-columns:
+    minmax(220px, 1fr) minmax(0, 1.6fr);
+
+  gap: 80px;
+
+  padding: 72px 0 58px;
+}
+
+
+/* =========================================================
+   FOOTER BRAND
+   ========================================================= */
+
+.site-footer__brand a {
+  display: inline-flex;
+
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 20px;
+}
+
+.site-footer__brand img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.site-footer__brand p {
+  max-width: 220px;
+
+  color: var(--secondary-text);
+
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   FOOTER LINKS
+   ========================================================= */
+
+.site-footer__links {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 36px;
+}
+
+.site-footer__group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-footer__group>span {
+  margin-bottom: 18px;
+
+  color: var(--primary-text);
+
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.site-footer__group a {
+  margin-top: 11px;
+
+  color: var(--secondary-text);
+
+  font-size: 0.84rem;
+  line-height: 1.4;
+
+  transition:
+    color 200ms ease,
+    transform 200ms var(--ease-standard);
+}
+
+.site-footer__group a:hover {
+  color: var(--primary-text);
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+   ========================================================= */
+
+.site-footer__bottom {
+  display: flex;
+  font-size: 0.95rem;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 22px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+.site-footer__bottom p {
+  color: var(--disabled-text);
+
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes final-cta-drift-one {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(35px, 20px, 0);
+  }
+}
+
+@keyframes final-cta-drift-two {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(-30px, -25px, 0);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+  .final-cta {
+    min-height: 70vh;
+  }
+
+  .final-cta__content h2 {
+    font-size: 4rem;
+  }
+
+  .site-footer__main {
+    grid-template-columns: 1fr;
+
+    gap: 52px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 520px) {
+  .final-cta {
+    min-height: 68vh;
+  }
+
+  .final-cta__content h2 {
+    font-size: 3rem;
+    letter-spacing: -0.045em;
+  }
+
+  .final-cta__description {
+    margin-top: 22px;
+
+    font-size: 0.95rem;
+  }
+
+  .final-cta__button {
+    margin-top: 28px;
+  }
+
+  .site-footer__main {
+    padding: 56px 0 42px;
+  }
+
+  .site-footer__links {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px 24px;
+  }
+
+  .site-footer__group:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .site-footer__bottom {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 8px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .final-cta__glow--one,
+  .final-cta__glow--two,
+  .final-cta__content h2 span {
+    animation: none;
+  }
+
+  .site-footer__group a {
+    transition: none;
+  }
+}

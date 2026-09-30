@@ -1,0 +1,465 @@
+/* =========================================================
+   PRIVACY
+   ========================================================= */
+
+.privacy {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 90vh;
+
+  overflow: hidden;
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   BACKGROUND GLOWS
+   ========================================================= */
+
+.privacy__glow {
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  border-radius: 50%;
+
+  filter: blur(130px);
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+.privacy__glow--one {
+  top: 5%;
+  right: -20%;
+
+  background: var(--secondary);
+  opacity: 0.045;
+
+  animation: privacy-drift-one 16s ease-in-out infinite;
+}
+
+.privacy__glow--two {
+  bottom: -15%;
+  left: -18%;
+
+  background: var(--primary);
+  opacity: 0.06;
+
+  animation: privacy-drift-two 18s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   LAYOUT
+   ========================================================= */
+
+.privacy__layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr) 360px;
+
+  align-items: center;
+
+  gap: 90px;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.privacy__content {
+  max-width: 760px;
+}
+
+.privacy__content .section-description {
+  max-width: 650px;
+}
+
+
+/* =========================================================
+   PRINCIPLES
+   ========================================================= */
+
+.privacy__principles {
+  margin-top: 58px;
+}
+
+.privacy__principle {
+  display: grid;
+
+  grid-template-columns: 44px minmax(0, 1fr);
+
+  gap: 22px;
+
+  padding: 25px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.065);
+}
+
+.privacy__principle:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.065);
+}
+
+.privacy__number {
+  padding-top: 4px;
+
+  color: var(--secondary);
+
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+}
+
+.privacy__principle h3 {
+  color: var(--primary-text);
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.privacy__principle p {
+  max-width: 560px;
+
+  margin-top: 8px;
+
+  color: var(--secondary-text);
+
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   VISUAL
+   ========================================================= */
+
+.privacy__visual {
+  position: relative;
+
+  display: grid;
+  place-items: center;
+
+  width: 340px;
+  height: 340px;
+
+  justify-self: center;
+}
+
+.privacy__halo {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.055);
+
+  animation: privacy-spin linear infinite;
+}
+
+.privacy__halo--outer {
+  width: 310px;
+  height: 310px;
+
+  border-color: rgba(23, 211, 239, 0.09);
+
+  animation-duration: 24s;
+}
+
+.privacy__halo--middle {
+  width: 225px;
+  height: 225px;
+
+  border-color: rgba(103, 24, 217, 0.13);
+
+  animation-duration: 18s;
+  animation-direction: reverse;
+}
+
+.privacy__halo--inner {
+  width: 145px;
+  height: 145px;
+
+  border-color: rgba(242, 25, 250, 0.11);
+
+  animation-duration: 14s;
+}
+
+
+/* =========================================================
+   CORE
+   ========================================================= */
+
+.privacy__core {
+  position: relative;
+
+  display: grid;
+  place-items: center;
+
+  width: 104px;
+  height: 104px;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 32px;
+
+  background:
+    linear-gradient(145deg,
+      rgba(34, 38, 58, 0.9),
+      rgba(24, 27, 43, 0.78));
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.3),
+    0 0 70px rgba(103, 24, 217, 0.1);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  z-index: 2;
+}
+
+.privacy__lock {
+  position: relative;
+
+  width: 30px;
+  height: 25px;
+
+  margin-top: 9px;
+
+  border: 2px solid var(--icon-active);
+  border-radius: 6px;
+}
+
+.privacy__lock::before {
+  content: "";
+
+  position: absolute;
+
+  width: 16px;
+  height: 17px;
+
+  left: 50%;
+  top: -14px;
+
+  transform: translateX(-50%);
+
+  border: 2px solid var(--icon-active);
+  border-bottom: 0;
+
+  border-radius: 10px 10px 0 0;
+}
+
+.privacy__lock span {
+  position: absolute;
+
+  width: 5px;
+  height: 8px;
+
+  top: 7px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border-radius: 999px;
+
+  background: var(--secondary);
+
+  box-shadow:
+    0 0 12px rgba(23, 211, 239, 0.5);
+}
+
+
+/* =========================================================
+   ORBIT DOTS
+   ========================================================= */
+
+.privacy__dot {
+  position: absolute;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  z-index: 3;
+}
+
+.privacy__dot--one {
+  top: 30px;
+  right: 72px;
+
+  background: var(--secondary);
+
+  box-shadow:
+    0 0 16px rgba(23, 211, 239, 0.5);
+}
+
+.privacy__dot--two {
+  bottom: 58px;
+  left: 42px;
+
+  background: var(--primary);
+
+  box-shadow:
+    0 0 16px rgba(103, 24, 217, 0.5);
+}
+
+.privacy__dot--three {
+  right: 32px;
+  bottom: 105px;
+
+  background: var(--accent);
+
+  box-shadow:
+    0 0 16px rgba(242, 25, 250, 0.5);
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes privacy-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes privacy-drift-one {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(-25px, 25px, 0);
+  }
+}
+
+@keyframes privacy-drift-two {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(25px, -20px, 0);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+  .privacy {
+    min-height: auto;
+  }
+
+  .privacy__layout {
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+  }
+
+  .privacy__visual {
+    width: 280px;
+    height: 280px;
+  }
+
+  .privacy__halo--outer {
+    width: 260px;
+    height: 260px;
+  }
+
+  .privacy__halo--middle {
+    width: 190px;
+    height: 190px;
+  }
+
+  .privacy__halo--inner {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 520px) {
+  .privacy__principles {
+    margin-top: 44px;
+  }
+
+  .privacy__principle {
+    grid-template-columns: 36px minmax(0, 1fr);
+
+    gap: 16px;
+
+    padding: 22px 0;
+  }
+
+  .privacy__principle h3 {
+    font-size: 1.1rem;
+  }
+
+  .privacy__principle p {
+    font-size: 0.88rem;
+  }
+
+  .privacy__visual {
+    width: 240px;
+    height: 240px;
+  }
+
+  .privacy__halo--outer {
+    width: 220px;
+    height: 220px;
+  }
+
+  .privacy__halo--middle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .privacy__halo--inner {
+    width: 105px;
+    height: 105px;
+  }
+
+  .privacy__core {
+    width: 88px;
+    height: 88px;
+
+    border-radius: 27px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .privacy__glow--one,
+  .privacy__glow--two,
+  .privacy__halo {
+    animation: none;
+  }
+}
