@@ -210,7 +210,7 @@ p {
 
   color: var(--secondary);
 
-  font-size: 0.78rem;
+  font-size: 1.0rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   line-height: 1;
@@ -222,7 +222,7 @@ p {
 
   width: 6px;
   height: 6px;
-
+  font-size: 1.0rem;
   border-radius: 50%;
 
   background: var(--secondary);
@@ -444,4 +444,47 @@ p {
     opacity: 1;
     transform: none;
   }
+}
+
+html[dir="rtl"] body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+html[dir="rtl"] .section-title,
+html[dir="rtl"] .philosophy__content h2 {
+  color: var(--primary-text) !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0 !important;
+}
+
+html[dir="rtl"] .section-description {
+  line-height: 1.9 !important;
+}
+
+html[dir="rtl"] .hero__title {
+  letter-spacing: 0;
+  line-height: 1.15;
+}
+
+html[dir="rtl"] .hero__title span {
+  line-height: inherit;
+}
+
+html .hero__title span {
+  line-height: inherit;
+}
+
+html[dir="rtl"] .final-cta__content h2 {
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+html[dir="rtl"] .final-cta__content h2 span {
+  line-height: 1.2;
+  padding-bottom: 0.3em;
+}
+
+html .final-cta__content h2 span {
+  line-height: 1.2;
+  padding-bottom: 0.3em;
 }
