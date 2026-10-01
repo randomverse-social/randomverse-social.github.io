@@ -1,5 +1,3 @@
-
-
 :root {
   /* Brand */
   --primary: #6718D9;
@@ -235,6 +233,8 @@ p {
 
 .section-title {
   max-width: 780px;
+
+  margin-top: 20px;
 
   color: var(--primary-text);
 
