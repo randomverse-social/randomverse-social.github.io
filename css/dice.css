@@ -169,19 +169,19 @@
 }
 
 .dice__face--bottom span:nth-child(3) {
-  grid-area: 2 / 2;
-}
-
-.dice__face--bottom span:nth-child(4) {
-  grid-area: 3 / 1;
-}
-
-.dice__face--bottom span:nth-child(5) {
   grid-area: 2 / 1;
 }
 
-.dice__face--bottom span:nth-child(6) {
+.dice__face--bottom span:nth-child(4) {
   grid-area: 2 / 3;
+}
+
+.dice__face--bottom span:nth-child(5) {
+  grid-area: 3 / 1;
+}
+
+.dice__face--bottom span:nth-child(6) {
+  grid-area: 3 / 3;
 }
 
 .dice__shadow {
