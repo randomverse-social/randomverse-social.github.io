@@ -34,14 +34,26 @@ if ("IntersectionObserver" in window) {
 const siteNav = document.querySelector(".site-nav");
 const navToggle = document.querySelector(".site-nav__toggle");
 const mobileNav = document.querySelector(".site-nav__mobile");
+
 const navLinks = document.querySelectorAll(
   '.site-nav__links a[href^="#"], .site-nav__mobile a[href^="#"]'
+);
+
+const desktopNavLinks = document.querySelectorAll(
+  '.site-nav__links a[href^="#"]'
 );
 
 function updateNavScrollState() {
   if (!siteNav) return;
 
   siteNav.classList.toggle("is-scrolled", window.scrollY > 30);
+
+  // Clear the active section when returning to the hero.
+  if (window.scrollY < 150) {
+    desktopNavLinks.forEach((link) => {
+      link.classList.remove("is-active");
+    });
+  }
 }
 
 updateNavScrollState();
@@ -87,10 +99,6 @@ if (siteNav && navToggle && mobileNav) {
 
 const sections = document.querySelectorAll(
   "main section[id]"
-);
-
-const desktopNavLinks = document.querySelectorAll(
-  '.site-nav__links a[href^="#"]'
 );
 
 if ("IntersectionObserver" in window && sections.length) {
