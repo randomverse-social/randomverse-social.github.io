@@ -139,6 +139,12 @@ p {
   margin: 0;
 }
 
+p {
+  color: var(--secondary-text);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.75;
+}
+
 
 /* =========================================================
    GLOBAL LAYOUT

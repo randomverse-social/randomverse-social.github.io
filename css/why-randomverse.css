@@ -113,7 +113,7 @@
   margin-top: 12px;
 
   color: var(--secondary-text);
-  font-size: 0.95rem;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
   line-height: 1.7;
 }
 
@@ -272,7 +272,7 @@
   }
 
   .why-reason p {
-    font-size: 0.9rem;
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
   }
 
   .why-reason__mark {

@@ -171,7 +171,7 @@
 
   color: var(--secondary-text);
 
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
   line-height: 1.75;
 }
 
@@ -333,7 +333,7 @@
 
   color: var(--secondary-text);
 
-  font-size: 0.88rem;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
   line-height: 1.65;
 }
 
@@ -403,7 +403,7 @@
   }
 
   .for-users__feature p {
-    font-size: 0.92rem;
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
     line-height: 1.7;
   }
 
@@ -433,7 +433,7 @@
   }
 
   .user-feature p {
-    font-size: 0.88rem;
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
   }
 }
 
